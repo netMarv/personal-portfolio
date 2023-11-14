@@ -1,0 +1,29 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Marvin Becher Portfolio" seoTitle="Marvin Becher, Network Engineer Portfolio" seoDesc="Enthusiastic about networking technology and innovation, I'm a dynamic young professional pushing boundaries in the digital realm."
+>
+    <div class="w-8/12 md:w-6/12 mx-auto">
+        <h1 class="text-5xl md:text-6xl text-center drop-shadow-[0px_20px_40px_rgba(39,245,131,0.6)]">Hey 👋, I am Marvin Becher</h1>
+
+
+<div id="typed-strings">
+    <p>I am a <strong>Network Engineer</strong></p>
+    <p><em>Enthusiastic</em> about <em>networking technology</em> and innovation.</p>
+</div>
+
+<div class="text-center mt-6"><span id="typed"></span></div>
+</div>
+</MainLayout>
+
+
+<script>
+    import Typed from "typed.js"
+
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 30,
+    loop: true
+  });
+</script>
