@@ -1,23 +1,65 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro"
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Marvin Becher's About" seoTitle="About Marvin Becher, Network Engineer" seoDesc="Hi there! My name is Marvin Becher, and I'm a network engineer. I'm a dynamic young professional pushing boundaries in the digital realm.">
-    <div class="w-6/12 mx-auto">
-        <h1 class="text-5xl">About</h1>
-        <img src="/public/images/memoji.png" class="my-2 drop-shadow-[10px_10px_35px_rgba(39,245,131,0.3)]"/>
-        <p>
-            Hello! My name is John Doe, and I'm a Network Engineer with over 5 years of experience in the industry. I am passionate about creating reliable and efficient network solutions that solve real-world problems and simplify people's lives.
-          </p><br />
-          <p>
-            My expertise is in network automation and management, with a focus on cloud infrastructures and containerization. I am skilled in a variety of technologies and tools, including Docker, Kubernetes, Ansible, Terraform, and NGINX. Additionally, I have experience in programming with Python and Bash scripting and efficiently manage both Linux and Windows systems.
-          </p><br />
-          <p>
-            Beyond my technical skills, I pride myself on my ability to collaborate with team members and communicate effectively with stakeholders. I love tackling complex challenges and always find innovative solutions to difficult problems.
-          </p><br />
-          <p>
-            When I'm not working on network solutions, you might find me golfing in the beautiful nature or tinkering with electronics projects. I am always looking for new challenges and exciting projects, so I welcome any opportunity for collaboration. Thank you for stopping by!
-          </p>
-    </div>
-
+<MainLayout
+  title="Marvin's About"
+  seoTitle="About Marvin, Network Engineer"
+  seoDesc="Hi there! My name is Marvin, and I'm a network engineer. I'm a dynamic young professional pushing boundaries in the digital realm."
+>
+  <div class="w-10/12 lg:w-6/12 mx-auto p-4 lg:p-8">
+    <h1 class="text-6xl text-center">About</h1>
+    <a href="https://github.com/netMarv" target="_blank">
+      <img
+        src="../images/memoji.png"
+        class="my-2 mx-auto transform transition-transform hover:scale-110 hover:opacity-75 hover:drop-shadow-[10px_10px_35px_rgba(39,245,131,0.3)]"
+        alt="My Memoji"
+      />
+    </a>
+    <p>
+      Hello there! I'm Marvin, a seasoned Network Engineer with over 5 years of
+      hands-on experience. My passion lies in crafting robust and streamlined
+      network solutions that not only address real-world challenges but also
+      enhance the overall user experience.
+    </p>
+    <br />
+    <p>
+      🌐 <strong>Expertise & Focus:</strong><br />
+       My forte lies in network automation and management, particularly in the
+      realm of cloud infrastructures and containerization. I bring proficiency
+      in a diverse array of technologies such as Docker, Kubernetes, Ansible,
+      Terraform, and NGINX. My skill set extends to programming with Python and
+      Bash scripting, allowing me to efficiently navigate both Linux and Windows
+      systems.
+    </p>
+    <br />
+    <p>
+      💻 <strong>Technical Prowess:</strong><br />
+       I thrive on tackling intricate challenges, consistently delivering
+      innovative solutions to complex problems. My commitment to staying at the
+      forefront of technological advancements ensures that I remain adept with
+      the latest tools and methodologies.
+    </p>
+    <br />
+    <p>
+      🤝 <strong>Collaboration & Communication:</strong><br />
+       Beyond technical acumen, I pride myself on fostering strong collaboration
+      within teams and maintaining effective communication with stakeholders.
+      This ensures seamless project execution and successful outcomes.
+    </p>
+    <br />
+    <p>
+      ⛳ <strong>Beyond the Tech World:</strong><br />
+       When I'm not immersed in network solutions, you might catch me on the
+      golf course, embracing the beauty of nature. Alternatively, I enjoy
+      delving into electronics projects, always eager to explore new horizons.
+    </p>
+    <br />
+    <p>
+      🚀 <strong>Seeking New Challenges:</strong><br />
+       I am actively seeking exciting projects and welcome any opportunity for
+      collaboration. If you're on the lookout for a dynamic Network Engineer
+      with a proven track record, I would love to connect.
+    </p>
+  </div>
 </MainLayout>

@@ -2,28 +2,56 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Marvin Becher Portfolio" seoTitle="Marvin Becher, Network Engineer Portfolio" seoDesc="Enthusiastic about networking technology and innovation, I'm a dynamic young professional pushing boundaries in the digital realm."
+<MainLayout
+  title="Marvin Portfolio"
+  seoTitle="Marvin, Network Engineer Portfolio"
+  seoDesc="Enthusiastic about networking technology and innovation, I'm a dynamic young professional pushing boundaries in the digital realm."
 >
-    <div class="w-8/12 md:w-6/12 mx-auto">
-        <h1 class="text-5xl md:text-6xl text-center drop-shadow-[0px_20px_40px_rgba(39,245,131,0.6)]">Hey 👋, I am Marvin Becher</h1>
+  <div class="w-8/12 md:w-6/12 mx-auto">
+    <h1
+      class="text-5xl md:text-6xl text-center drop-shadow-[0px_20px_40px_rgba(39,245,131,0.6)]"
+    >
+      Hey 👋, I am Marvin
+    </h1>
 
+    <div id="typed-strings">
+      <p>I am a junior <strong>Network Engineer</strong></p>
+      <p>
+        <em>Enthusiastic</em> about <em>networking technology</em> and
+        innovation.
+      </p>
+    </div>
 
-<div id="typed-strings">
-    <p>I am a <strong>Network Engineer</strong></p>
-    <p><em>Enthusiastic</em> about <em>networking technology</em> and innovation.</p>
-</div>
+    <div class="text-center mt-6"><span id="typed"></span></div>
+  </div>
 
-<div class="text-center mt-6"><span id="typed"></span></div>
-</div>
+  <div class="text-center">
+    <!-- GitHub Button -->
+    <a
+      href="https://github.com/netMarv"
+      target="_blank"
+      class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mx-2 transition-transform transform hover:scale-105"
+    >
+      GitHub
+    </a>
+
+    <!-- Bento Button -->
+    <a
+      href="https://bento.me/marv"
+      target="_blank"
+      class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mx-2 transition-transform transform hover:scale-105"
+    >
+      Bento
+    </a>
+  </div>
 </MainLayout>
 
-
 <script>
-    import Typed from "typed.js"
+  import Typed from "typed.js";
 
-  var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
+  var typed = new Typed("#typed", {
+    stringsElement: "#typed-strings",
     typeSpeed: 30,
-    loop: true
+    loop: true,
   });
 </script>
