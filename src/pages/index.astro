@@ -23,35 +23,42 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <div class="text-center mt-6"><span id="typed"></span></div>
+
+    <div class="text-center mt-20">
+      <!-- GitHub Button -->
+      <a
+        href="https://github.com/netMarv"
+        target="_blank"
+        class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mx-2 transition-transform transform hover:scale-105"
+      >
+        GitHub
+      </a>
+
+      <!-- Bento Button -->
+      <a
+        href="https://bento.me/marv"
+        target="_blank"
+        class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mx-2 transition-transform transform hover:scale-105"
+      >
+        Bento
+      </a>
+
+      <!-- Email -->
+      <p class="mt-4 text-xl mt-20">
+        Contact: <a href="mailto:networkmarv@gmail.com" class="text-green-500"
+          >networkmarv@gmail.com</a
+        >
+      </p>
+    </div>
   </div>
 
-  <div class="text-center">
-    <!-- GitHub Button -->
-    <a
-      href="https://github.com/netMarv"
-      target="_blank"
-      class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mx-2 transition-transform transform hover:scale-105"
-    >
-      GitHub
-    </a>
+  <script>
+    import Typed from "typed.js";
 
-    <!-- Bento Button -->
-    <a
-      href="https://bento.me/marv"
-      target="_blank"
-      class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mx-2 transition-transform transform hover:scale-105"
-    >
-      Bento
-    </a>
-  </div>
+    var typed = new Typed("#typed", {
+      stringsElement: "#typed-strings",
+      typeSpeed: 30,
+      loop: true,
+    });
+  </script>
 </MainLayout>
-
-<script>
-  import Typed from "typed.js";
-
-  var typed = new Typed("#typed", {
-    stringsElement: "#typed-strings",
-    typeSpeed: 30,
-    loop: true,
-  });
-</script>
