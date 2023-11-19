@@ -1,6 +1,7 @@
 ---
 import { SEO } from "astro-seo";
 const { title, seoTitle, seoDesc } = Astro.props;
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 ---
 
 <head>
@@ -8,5 +9,8 @@ const { title, seoTitle, seoDesc } = Astro.props;
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
+  <GoogleFontsOptimizer
+    url="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap"
+  />
   <link rel="icon" href="../images/memoji.png" type="image/x-icon" />
 </head>
